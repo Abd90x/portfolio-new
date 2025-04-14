@@ -17,8 +17,8 @@ const TechIcon = ({
   useEffect(() => {
     if (model.name === "Interactive Developer")
       scene.scene.traverse((child) => {
-        if (child.isMesh && child.name === "Object_5") {
-          child.material = new THREE.MeshStandardMaterial({
+        if ((child as THREE.Mesh).isMesh && child.name === "Object_5") {
+          (child as THREE.Mesh).material = new THREE.MeshStandardMaterial({
             color: "#ffffff",
           });
         }
