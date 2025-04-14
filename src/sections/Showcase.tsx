@@ -42,32 +42,37 @@ const ShowcaseSection = () => {
     <section ref={sectionRef} id="work" className="app-showcase">
       <div className="w-full">
         <div className="showcaselayout">
-          <div className="first-project-wrapper" ref={project1Ref}>
-            <div className="image-wrapper">
-              <img src="/images/project1.png" alt="project" />
+          <div className="first-project-wrapper w-full " ref={project1Ref}>
+            <div className="image-wrapper bg-[#fffbf2] w-full rounded-2xl">
+              <img
+                src="/images/project1.png"
+                alt="project"
+                className="object-contain"
+              />
             </div>
             <div className="text-content">
-              <h1>Project 1</h1>
+              <h1>Innova Designs | End to End solutions</h1>
               <p className="text-white-50 md:text-xl">
-                A brief description of the project, highlighting its key
-                features and technologies used.
+                A company profile website that showcases the company's services,
+                portfolio, and contact information. The website is designed to
+                be visually appealing and user-friendly
               </p>
             </div>
           </div>
 
           <div className="project-list-wrapper">
             <div className="project w-full" ref={project2Ref}>
-              <div className="image-wrapper bg-[#ffefdb]">
+              <div className="image-wrapper bg-[#f9a5b5]">
                 <img src="/images/project2.png" alt="project2" />
               </div>
-              <h2>Project 2</h2>
+              <h2>AI Images Generator</h2>
             </div>
 
             <div className="project w-full" ref={project3Ref}>
-              <div className="image-wrapper bg-[#ffe7eb]">
+              <div className="image-wrapper bg-[#fce2c0]">
                 <img src="/images/project3.png" alt="project3" />
               </div>
-              <h2>Project 3</h2>
+              <h2>AI Resume Builder</h2>
             </div>
           </div>
         </div>

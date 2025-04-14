@@ -38,6 +38,18 @@ type ExpLogo = {
     imgPath: string;
 }
 
+type TechStackIcons = {
+    name: string;
+    modelPath: string;
+    scale: number;
+    rotation: [number, number, number];
+}
+type TechStackImgs = {
+    name: string;
+    imgPath: string;
+}
+
+
  const words: Word[] = [
     { text: "Ideas", imgPath: "/images/ideas.svg" },
     { text: "Concepts", imgPath: "/images/concepts.svg" },
@@ -69,10 +81,7 @@ type ExpLogo = {
       name: "Skills",
       link: "#skills",
     },
-    {
-      name: "Testimonials",
-      link: "#testimonials",
-    },
+
   ];
   
 
@@ -143,11 +152,11 @@ type ExpLogo = {
 
   const expCards: ExpCard[] = [
     {
-      review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-      imgPath: "/images/exp1.png",
-      logoPath: "/images/logo1.png",
+      review: "Abdellatif brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+      imgPath: "/images/immacomma.png",
+      logoPath: "/images/imma-real.png",
       title: "Frontend Developer",
-      date: "January 2023 - Present",
+      date: "April 2024 - Present",
       responsibilities: [
         "Developed and maintained user-facing features for the Hostinger website.",
         "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
@@ -155,29 +164,18 @@ type ExpLogo = {
       ],
     },
     {
-      review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-      imgPath: "/images/exp2.png",
-      logoPath: "/images/logo2.png",
-      title: "Full Stack Developer",
-      date: "June 2020 - December 2023",
+      review: "Abdellatif contributions to our web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+      imgPath: "/images/upwork.png",
+      logoPath: "/images/upwork-c.png",
+      title: "Full Stack Developer (Freenlancer)",
+      date: "Sep 2023 - Present",
       responsibilities: [
-        "Led the development of Docker's web applications, focusing on scalability.",
-        "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-        "Contributed to open-source projects that were used with the Docker ecosystem.",
+        "Create and implement new user-facing features using Angular / React, and enhance the user experience. ",
+        "Maintain and improve the existing codebase of the project, focusing on performance optimization",
+        "Optimize the application for maximum speed and scalability"
       ],
     },
-    {
-      review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-      imgPath: "/images/exp3.png",
-      logoPath: "/images/logo3.png",
-      title: "React Native Developer",
-      date: "March 2019 - May 2020",
-      responsibilities: [
-        "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-        "Improved app performance and user experience through code optimization and testing.",
-        "Coordinated with the product team to implement features based on feedback.",
-      ],
-    },
+
   ];
   
   const expLogos: ExpLogo[] = [
@@ -195,6 +193,85 @@ type ExpLogo = {
     },
   ];
   
+  const techStackImgs: TechStackImgs[] = [
+    {
+      name: "React Developer",
+      imgPath: "/images/logos/react.png",
+    },
+    {
+      name: "Python Developer",
+      imgPath: "/images/logos/python.svg",
+    },
+    {
+      name: "Backend Developer",
+      imgPath: "/images/logos/node.png",
+    },
+    {
+      name: "Interactive Developer",
+      imgPath: "/images/logos/three.png",
+    },
+    {
+      name: "Project Manager",
+      imgPath: "/images/logos/git.svg",
+    },
+  ];
   
+  const techStackIcons: TechStackIcons[] = [
+    {
+      name: "React Developer",
+      modelPath: "/models/react_logo-transformed.glb",
+      scale: 1,
+      rotation: [0, 0, 0],
+    },
+    {
+      name: "Typescript Developer",
+      modelPath: "/models/typescript.glb",
+      scale: 1.5,
+      rotation: [0, 0, 0],
+    },
+    {
+      name: "Javascript Developer",
+      modelPath: "/models/node-transformed.glb",
+      scale: 5,
+      rotation: [0, -Math.PI / 2, 0],
+    },
+    {
+      name: "Interactive Developer",
+      modelPath: "/models/three.js-transformed.glb",
+      scale: 0.05,
+      rotation: [0, 0, 0],
+    },
+    {
+      name: "Project Manager",
+      modelPath: "/models/git-svg-transformed.glb",
+      scale: 0.05,
+      rotation: [0, -Math.PI / 4, 0],
+    },
+  ];
+  
+  
+  const socialImgs = [
+    {
+      name: "insta",
+      imgPath: "/images/insta.png",
+      link: "https://www.instagram.com/abd90v/",
+    },
+    {
+      name: "fb",
+      imgPath: "/images/fb.png",
+      link: "https://www.facebook.com/abd90v",
+    },
+    {
+      name: "x",
+      imgPath: "/images/x.png",
+      link: "https://twitter.com/abd90v",
+    },
+    {
+      name: "linkedin",
+      imgPath: "/images/linkedin.png",
+      link: "https://www.linkedin.com/in/abdellatif-alrefahi",
+    },
+  ];
 
-  export { words, counterItems, navLinks, logoIconsList, abilities, expCards, expLogos };
+
+  export { words, counterItems, navLinks, logoIconsList, abilities, expCards, expLogos, techStackImgs, techStackIcons, socialImgs };
